@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// suma con dos numeros teclados por el usuario
 int Primernumero;
 int Segundonumero;
 int suma;
