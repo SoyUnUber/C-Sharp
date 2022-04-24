@@ -1,0 +1,13 @@
+// Saludo personalizado
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+    string nombre;
+Console.WriteLine("Introduce tu nombre");
+nombre = Console.ReadLine();
+System.Console.WriteLine("buenas tardes {0}", nombre);
+
+        
