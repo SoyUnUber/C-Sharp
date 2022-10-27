@@ -1,0 +1,47 @@
+namespace WinFormsApp24
+{
+    public partial class Form1 : Form
+    {
+        public Form1() // VECTORES 
+        {
+            
+            //Objetivo1: El vector se leera de manera automatica
+            //se utilizara el loop FOR
+
+
+            int[] numeros = new int[5];  
+
+            numeros[0] = 12345; 
+            numeros[1] = 67;
+            numeros[2] = 89;
+            numeros[3] = 1011;
+            numeros[4] = 1213;
+
+            MessageBox.Show(numeros.Length.ToString());
+
+
+
+
+            //for (int i = 0; i < length; i++)
+            // for (int i = 0; /*esta parte inicializa y crea una variale que empieza en 0*/
+            /*  i < length; -- esta nos una condicion donde nos dice que I, que es la variable que el creo, es menor que cierta longitud que nosotros le vamos a dar, 
+             *  por ejmplo un numero en este caso en vez de un numero vamos a ponerle el tama;o del vector
+             *  en este caso, en vez de un numero, vamos a ponerle el tama;o del vector
+             *  y para hacerlo mas dinamico, que se pueda cambiar el tama;o del vector y no haya que ir por el codigo del FOR a cambiarlo, no deberiamos poner un numero
+             * por ejemplo yo podria poner un 5CINCO porque sabemos que el vector mide 5
+             * pero tambien podemos hacer simplemente, escribir NUMEROS.LENGHT. le indicamos que I tiene que ser menor al tama;o de numeros, cuando sea mayor que el tama;o de este vector 
+             * este mismo se saldra del FOR y ya no va a continuar realizando el codigo que nosotros pongamos adentro
+            */
+            // i++) y por ultimo le vamos a decir que aumente de uno a uno + + 
+
+
+
+
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                MessageBox.Show(numeros[i].ToString());
+            }
+
+        }
+    }
+}
