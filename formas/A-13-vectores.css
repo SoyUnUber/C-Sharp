@@ -1,0 +1,31 @@
+namespace WinFormsApp24
+{
+    public partial class Form1 : Form
+    {
+        public Form1() // VECTORES o tambien conocido como Arreglos***
+        {
+            /* Hasta el momento nosotros conocemos para guardar informacion/datos las variables, por ejemplo. INT numx = 0;. Donde 0 va ser el dato que nosotros vamos a guardar en esa variable.
+             la variable viene a ser un espacio de memoria que nosotros vamos a ingresar un dato, solamente un dato del tipo que nosotros le hayamos puesto a la variable. */
+            //los VECTORES son basicamente la misma idea pero MAS grande. Los vectores son una estructura de datos que almacena un conjunto de datos del mismo tipo
+            /* por ejemplo, si nosotros en una variale podemos poner solo UN DATO del tipo que le hayamos puesto, en el vector podemos poner diferentes datos en el mismo espacio que ocuparia una 
+            variable y obviamente del mismo tipo */
+
+            int[] numeros = new int[5]; // para poder declarar un VECTOR nosotros ponemos INT[], esto nos indica que esta variable va ser del tipo INTEGER o que va aceptar datos INTEGER pero va aceptar mas de un dato
+            // NEW INT [5], le declaramos que este tipo INT tenga un tama;o de 5 espacios. solo es la declaracion del vector, no le hemos metido ningun dato.
+
+            //LOS VECTORES trabajan por medio de indices, quiere decir, nosotros al decirle a nuestro vector tiene 5 posiciones "NEW INT[5]" va ir de un indice desde el 0 hasta al 4. los arreglos comienzan desde 0, no desde 1.
+
+            //por ejemplo si yo quiero meter un dato en la primera posicion del vector numero debemos escribir lo siguiente.
+
+            numeros[0] = 12345; //escribimos la posicion a la cual yo quiero meter informacion por ejemplo al 0. numeros[0], que seria la primera posicion.
+            numeros[1] = 67;
+            numeros[2] = 89;
+            numeros[3] = 1011;
+            numeros[4] = 1213;
+
+            MessageBox.Show(numeros[1].ToString()); //aca le pedimos que nos muestre la informacion dentro del vector. ocupamos indicar la posicion del dato que debemos mostrar.
+            //usamos ToString para convertirlo en palabra y pueda mostrarse en la consola sin que haya problemas. 
+
+        }
+    }
+}
