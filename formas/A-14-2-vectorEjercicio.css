@@ -1,0 +1,39 @@
+namespace WinFormsApp24
+{
+    public partial class Form1 : Form
+    {
+        public Form1() // VECTORES 
+        {
+
+            //Objetivo2: El vector se llenara de manera automatica
+            //se utilizara el loop FOR
+
+
+            int[] numeros = new int[5];  
+
+            numeros[0] = 12345; 
+            numeros[1] = 67;
+            numeros[2] = 89;
+            numeros[3] = 1011;
+            numeros[4] = 1213;
+
+            MessageBox.Show(numeros.Length.ToString());
+
+
+            string[] vector = new string[10];
+
+            for (int x = 0; x < vector.Length; x++)
+            {
+
+                vector[x] = "mi posicion es: " + x.ToString();
+
+            }
+
+            for (int xx = 0; xx < vector.Length; xx++)
+            {
+                MessageBox.Show(vector[xx].ToString());
+            }
+
+        }
+    }
+}
