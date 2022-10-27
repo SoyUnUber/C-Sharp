@@ -1,0 +1,36 @@
+namespace WinFormsApp24
+{
+    public partial class Form1 : Form
+    {
+        public Form1() // MATRIZ
+                       // una matriz es similar a un vector, son espacios de memorias donde vamos a guardar varios datos de un mismo tipo, pero trabajan de una manera distinta.
+ 
+        {
+
+            
+
+
+            int[] numeros = new int[5];
+            //para crear una matriz es similar a crear un vector
+            int[,] masnumeros = new int[3, 5]; //adentro de los corchetes le pondremos un numero de fila, la primera seria el numero de filas, el segundo seria el numero de columna
+                //por ejemplo 3 filas , 5 colunmas
+
+
+
+
+            masnumeros[0,0] = 0000; //en la fila 0, en la columna 0
+            //cada fila tiene 5 columnas entonces vamos hacerlo 5 veces
+            masnumeros[0, 1] = 12;
+            masnumeros[0, 2] = 34;
+            masnumeros[0, 3] = 56;
+            masnumeros[0, 4] = 78;
+
+            for (int i = 0; i < 5; i++) //el LENGTH sera 5 porque el tama;o de columna son 5, son los 5 datos que tenemos arriba.
+            {
+                MessageBox.Show(masnumeros[0,i].ToString()); //en este mbox pondremos la posicion de Masnumeros
+            }
+
+
+        }
+    }
+}
