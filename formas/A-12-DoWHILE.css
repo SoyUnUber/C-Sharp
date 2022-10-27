@@ -1,0 +1,31 @@
+namespace WinFormsApp24
+{
+    public partial class Form1 : Form
+    {
+        public Form1() //DO WHILE este es el unico LOOP ( do - while) que se necesita que le pongan ; punto y coma
+        {
+            string varx = "";
+            int x = 0;
+
+            //while (x < 10) // X llegara hasta 9
+
+            //{
+            //    varx += x.ToString() + "-"; // VARX sera igual a X transformado en un string y se agregara un - guion
+
+            //    x++; // X se sumara 1 + 1 + 1 
+            //}
+
+            do 
+            {
+
+                varx += x.ToString() + "-";
+                x++;
+
+            } while (x > 10); // su condicion sera que si X es mayor a 10, que se realice el codigo. Como X vale 0, su condicion nunca se va a cumplir...
+            //en teoria no deberia realizarse el DO WHILE, pero si nosotros lo ejecutamos vemos que el resultado nos da 0- CERO Y UN -
+
+            MessageBox.Show(varx.ToString());
+
+        }
+    }
+}
